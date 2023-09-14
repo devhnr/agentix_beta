@@ -1,0 +1,5 @@
+Employee ID,Member Name,Gender ( M / F),Relationship,Date of birth (DD-MM-YYYY),Age,Mobile Number,Email ID,Sum Insured,Date of Joining,Member_ID,endorsement no.,Endoresment date,type of addition,Date of leaving
+SA001,Swapnali,F,Employee,01-01-1981,42,8976161446,swapnalipawar@raghnall.co.in,100000,01-04-2023,,,,add,
+SA001,Santosh,M,Spouse,02-02-1990,23,8976161446,swapnalipawar@raghnall.co.in,100000,01-04-2023,,,,add,
+SA001,Sahivansh,M,Son,02-09-1973,50,8976161446,swapnalipawar@raghnall.co.in,100000,01-04-2023,,,,add,
+SA001,Janabai,F,Mother,15-02-1973,50,8976161446,swapnalipawar@raghnall.co.in,100000,01-04-2023,,,,add,

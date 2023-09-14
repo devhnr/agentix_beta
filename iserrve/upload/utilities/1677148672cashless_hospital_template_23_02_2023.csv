@@ -1,0 +1,9 @@
+hospital_name,hospital_address,location,landmark,city,state,pincode,email,phone,insurence_company
+St. John's Hospital1,123 Main Street,Downtown,Next to Subway,Los Angeles,CA,90001,info@stjohnshospital.com,9876543210,Blue Cross
+St. John's Hospital2,456 1st Avenue,Midtown,Near Central Park,New York,NY,10001,info@mercyhospital.com,9876543210,Aetna
+St. John's Hospital3,789 Broadway,Uptown,Across from Mall,Chicago,IL,60601,info@memorialhospital.com,9876543210,United Healthcare
+St. John's Hospital4,987 Elm Street,Suburb,Near City Hall,San Francisco,CA,94101,info@riversidehospital.com,9876543211,Kaiser Permanente
+St. John's Hospital5,246 2nd Street,Downtown,Near Park,Seattle,WA,98101,info@cityhospital.com,9876543211,Humana
+St. John's Hospital6,369 Lakeview Drive,Suburb,Near Golf Course,Dallas,TX,75201,info@lakesidehospital.com,9876543212,Cigna
+St. John's Hospital7,101 Pine Street,Rural Area,Near Forest,Portland,OR,97201,info@pinetreehospital.com,9876543212,Anthem
+St. John's Hospital8,555 Sunshine Boulevard,Coastal Area,Near Beach,Miami,FL,33101,info@sunnysidehospital.com,9876543213,Blue Shield

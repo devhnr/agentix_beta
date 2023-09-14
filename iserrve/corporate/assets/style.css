@@ -1,0 +1,255 @@
+.mt-6 {
+  margin-top: 3.5rem!important;
+}
+.card-header{
+
+display: flex;
+}
+
+.card-title {
+ align-items: center;
+  width: 60%;
+  display: flex;
+}
+.card-tools
+{
+  width: 40%;
+  text-align: end;
+  float: right;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 0px!Important;
+
+}
+.font-size-15px{
+  font-size:15px!important;
+}
+
+.tabflex {
+  width: 50%;
+  margin: 0px;
+}
+.tab button {
+margin: 1px;
+     width: 100%;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+  transition: 0.3s;
+  font-size: 13px;
+  border-radius: 20px;
+}
+.info-box-icon {
+  display: flex;
+  padding: 5px;
+  border-radius: 50px;
+  margin-right: 9px;
+}
+.icon-medium{
+font-size: 12px;
+}
+
+.tab {
+  justify-content: center;
+  display: inline;
+  background-color: #fff;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-user-img {
+  border: 5px solid #E5EAF5;
+  margin: 0 auto;
+  padding: 3px;
+  width: 100px;
+  height: 100px!important;
+  box-shadow: 0px 0px 30px 10px rgb(0 0 0 / 6%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 23px;
+  color: #0b6370;
+}
+
+.small-box .line {
+  margin-top: 5px;
+  height: 4px;
+  border-radius: 1.25rem;
+  width: 92%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+.card1 {
+  background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+
+    border-radius: 1.25rem;
+  margin: 0 0.5em;
+
+
+}
+.carousel-control-prev {
+    left: -10px;
+}
+.carousel-control-next {
+    right: -26px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+
+  width: 40px;
+  height: 40px;
+  background-color: white!important;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 41.6666%;
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+.card1 .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1 img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card1 .img-wrapper {
+    height: 17em;
+  }
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+.card1 {
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+
+    border-radius: 1.25rem;
+    margin: 0 0.5em;
+}
+.carousel-control-prev {
+    left: -10px;
+}
+.carousel-control-next {
+    right: -26px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: white !important;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+    .carousel-item1 {
+        margin-right: 0;
+        flex: 0 0 37.6666%;
+        display: block;
+    }
+
+    .carousel-inner {
+        display: flex;
+    }
+}
+.card1 .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1 img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+    .card1 .img-wrapper {
+        height: 17em;
+    }
+}
+
+/* employee list */
+
+.small-box p {
+    font-size: 18px;
+}
+
+.btn-group,
+.btn-group-vertical {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: none !important;
+    vertical-align: middle;
+}
+div#example_filter {
+    margin-top: 0px !important;
+    /* right: 0; */
+    z-index: 1;
+    /* position: absolute; */
+}
+.btn-upld-csv {
+    border-radius: 50px;
+    color: #fff;
+    background-color: #37b2bb;
+    border-color: #37b2bb;
+    box-shadow: none;
+    padding: 0.25rem 0.5rem;
+}
+
+/* end employee list */
+.info-box-content1 {
+    display: block;
+    text-align: left;
+    justify-content: center;
+
+}
+
+.shadows{
+  border-right: 5px solid #dee2e6;
+}

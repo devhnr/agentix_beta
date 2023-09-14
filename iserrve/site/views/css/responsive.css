@@ -1,0 +1,110 @@
+
+@media (max-width: 575px){
+    .navbar-nav .nav-link {
+        font-weight: 600;
+        padding: 10px 10px !important;
+        border-radius: 0;
+        text-transform: capitalize;
+        position: relative;
+    }
+	#regForm {
+    background-color: #ffffff;
+    margin: 0px auto;
+    padding: 30px 20px!important;
+    width: 100%;
+}
+	
+	.step {
+    height: 6px;
+    width: 45px!important;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    /* border-radius: 50%; */
+    display: inline-block;
+    opacity: 0.5;
+}
+	
+	
+    .get-quote{
+		margin-bottom:10px
+	}
+  
+    .d-none-mob{
+        display:none;
+    }
+    .d-none-desktop{
+        display:block;
+    }
+    
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: start!important;
+    text-align: left!important;
+}
+.top-bar{
+    display:none;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    letter-spacing: 0.7px;
+    color: #232323;
+    line-height: 20px;
+    margin: 0px 0px;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+}
+.consultation-btn{
+    margin-left:0px;
+    border-radius: 5px;
+    background: #0063a3;
+    color: #ffffff;
+    padding: 10px 10px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.img-place{
+    padding:0px 0px;
+}
+.category-banner5 .inner .image img {
+    display: block;
+    height: auto; 
+    width: auto;
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    border-radius: 50%;
+}
+.pt-30px{
+    padding-top:10px;
+}
+.category-banner6 {
+    height:auto;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px;
+   background: white; 
+    box-shadow: 0 6px 16px rgb(52 105 203 / 16%);
+    margin: 10px 0px;
+
+}
+	
+	.v-compare{
+		    margin: 60px;
+	}
+	.v-compare .com-ico-head h5 a{
+	font-size: 22px;
+	}
+
+}
