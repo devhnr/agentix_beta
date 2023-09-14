@@ -1,0 +1,481 @@
+ <!-- ======= Footer ======= -->
+  <footer id="footer">
+<!-- 
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <?php $contact_detail = $this->home_model->all_contact_detail('1'); ?>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Corporate Office</h4>
+            <p>Krishna Antioxidants Pvt. Ltd.
+107/108 Raheja Plaza, Shah Industrial Estate, Near Yashraj Studios, Veera Desai Road, Andheri (West),
+Mumbai – 400053. India<br><br>
+              <strong>Tel:</strong> +91 22 40904100 <br>
+              <strong>Fax:</strong> +91 22 40904101<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Product Portfolio</h4>
+            <!--<ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Drilling Chemicals Range</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Refinery Chemicals Range</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Synthetic Rubber</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Polyolefins</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">PVC Stabilizers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Polyurethane Foam</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Agroscience</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Water Treatment</a></li>
+            </ul>-->
+            
+             <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/oil-drilling-additives">Oil Field Chemicals</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Refinery Chemicals Range</a></li>-->
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/synthetic-rubber">Petrochemicals</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/lubricant-additive-range">Lubricant  Range Additive</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/agroscience">Agroscience</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/castor-oil-derivatives">Castor Oil Derivatives</a></li>
+              
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links minus-margin-mobo">
+            <h4 class="display-none">&nbsp;</h4>
+            <ul>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Production Chemicals Range</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Lubricant Additive Range</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Thermoplastic Elastomers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Styrenic Polymers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Inks Paints & Coatings</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Castor Oil Derivatives</a></li>-->
+             <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/inks-paints-coatings">Inks, Paints & Coatings</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/polyurethane-foam">Polyurethane Foam</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/textiles">Textiles</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/water-treatments">Water Treatment</a></li>
+              
+               <!--<li><i class="bx bx-chevron-right"></i> <a href="https://cristol.co.in/product/plastic-and-polymers">Plastic & Polymers Treatment</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Sign up to our newsletter</h4>
+             <form id="addressForm1" action="<?php echo $base_url;?>Home/subscribe" method="post">
+              <input type="email" id="email_sub" name="email_sub" placeholder="E-MAIL">
+              <input type="button" value="Subscribe" onclick="subscribe_btn();" style="position: absolute;top: 0;right: 0;bottom: 0;border: 0;background: none;font-size: 14px;padding: 0 10px;background: #181818;color: #fff;transition: 0.3s;border-radius: 0;box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);">
+              <!-- <p class="form-error-text" id="contact_success" style="color: green;"></p> -->
+            </form>
+              <p class="form-error-text" id="email_err" style="color: red;"></p>
+            <div class="social-links mt-3">
+              <h4>Follow</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.facebook.com/cristolkapl/" target="_blank">Facebook</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.linkedin.com/company/krishna-antioxidants-pvt-ltd/" target="_blank">LinkedIn</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.youtube.com/channel/UCbOz0zJ2JiR-0xqWkK1EFQA" target="_blank">YouTube</a></li>
+            </ul>
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright" style="text-align: center;">
+        &copy; Copyright <strong><span>Cristol</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="<?php echo $base_url_views; ?>sliders/assets/js/jquery-1.9.1.min.js"></script> 
+    <script src="<?php echo $base_url_views; ?>sliders/owl-carousel/owl.carousel.js"></script>
+    
+    
+    <
+    <script>
+        $(document).ready(function() {
+  var el = $('.owl-carousels');
+  
+  var carousel;
+  var carouselOptions = {
+    margin: 10,
+   navigation:true,
+navigationText: [
+   "<i class='fa fa-chevron-left'></i>",
+   "<i class='fa fa-chevron-right'></i>"
+],
+    autoPlay : 100000,
+  dots: false,
+   
+
+pagination: true,
+   
+    responsive: {
+      0: {
+       
+        items: 1,
+        rows: 2, //custom option not used by Owl Carousel, but used by the algorithm below
+    
+      },
+      768: {
+          
+        items: 2,
+         slideBy: 'page',
+        rows: 2 //custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      991: {
+          
+        items: 3,
+         slideBy: 'page',
+        rows: 2 //custom option not used by Owl Carousel, but used by the algorithm below
+      },
+      
+      
+      
+      
+    }
+  };
+
+  //Taken from Owl Carousel so we calculate width the same way
+  var viewport = function() {
+    var width;
+    if (carouselOptions.responsiveBaseElement && carouselOptions.responsiveBaseElement !== window) {
+      width = $(carouselOptions.responsiveBaseElement).width();
+    } else if (window.innerWidth) {
+      width = window.innerWidth;
+    } else if (document.documentElement && document.documentElement.clientWidth) {
+      width = document.documentElement.clientWidth;
+    } else {
+      console.warn('Can not detect viewport width.');
+    }
+    return width;
+  };
+
+  var severalRows = false;
+  var orderedBreakpoints = [];
+  for (var breakpoint in carouselOptions.responsive) {
+    if (carouselOptions.responsive[breakpoint].rows > 1) {
+      severalRows = true;
+    }
+    orderedBreakpoints.push(parseInt(breakpoint));
+  }
+  
+  //Custom logic is active if carousel is set up to have more than one row for some given window width
+  if (severalRows) {
+    orderedBreakpoints.sort(function (a, b) {
+      return b - a;
+    });
+    var slides = el.find('[data-slide-index]');
+    var slidesNb = slides.length;
+    if (slidesNb > 0) {
+      var rowsNb;
+      var previousRowsNb = undefined;
+      var colsNb;
+      var previousColsNb = undefined;
+
+      //Calculates number of rows and cols based on current window width
+      var updateRowsColsNb = function () {
+        var width =  viewport();
+        for (var i = 0; i < orderedBreakpoints.length; i++) {
+          var breakpoint = orderedBreakpoints[i];
+          if (width >= breakpoint || i == (orderedBreakpoints.length - 1)) {
+            var breakpointSettings = carouselOptions.responsive['' + breakpoint];
+            rowsNb = breakpointSettings.rows;
+            colsNb = breakpointSettings.items;
+            break;
+          }
+        }
+      };
+
+      var updateCarousel = function () {
+        updateRowsColsNb();
+
+        //Carousel is recalculated if and only if a change in number of columns/rows is requested
+        if (rowsNb != previousRowsNb || colsNb != previousColsNb) {
+          var reInit = false;
+          if (carousel) {
+            //Destroy existing carousel if any, and set html markup back to its initial state
+            carousel.trigger('destroy.owl.carousel');
+            carousel = undefined;
+            slides = el.find('[data-slide-index]').detach().appendTo(el);
+            el.find('.fake-col-wrapper').remove();
+            reInit = true;
+          }
+
+
+          //This is the only real 'smart' part of the algorithm
+
+          //First calculate the number of needed columns for the whole carousel
+          var perPage = rowsNb * colsNb;
+          var pageIndex = Math.floor(slidesNb / perPage);
+          var fakeColsNb = pageIndex * colsNb + (slidesNb >= (pageIndex * perPage + colsNb) ? colsNb : (slidesNb % colsNb));
+
+          //Then populate with needed html markup
+          var count = 0;
+          for (var i = 0; i < fakeColsNb; i++) {
+            //For each column, create a new wrapper div
+            var fakeCol = $('<div class="fake-col-wrapper"></div>').appendTo(el);
+            for (var j = 0; j < rowsNb; j++) {
+              //For each row in said column, calculate which slide should be present
+              var index = Math.floor(count / perPage) * perPage + (i % colsNb) + j * colsNb;
+              if (index < slidesNb) {
+                //If said slide exists, move it under wrapper div
+                slides.filter('[data-slide-index=' + index + ']').detach().appendTo(fakeCol);
+              }
+              count++;
+            }
+          }
+          //end of 'smart' part
+
+          previousRowsNb = rowsNb;
+          previousColsNb = colsNb;
+
+          if (reInit) {
+            //re-init carousel with new markup
+            carousel = el.owlCarousel(carouselOptions);
+          }
+        }
+      };
+
+      //Trigger possible update when window size changes
+      $(window).on('resize', updateCarousel);
+
+      //We need to execute the algorithm once before first init in any case
+      updateCarousel();
+    }
+  }
+
+  //init
+  carousel = el.owlCarousel(carouselOptions);
+});
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+    autoPlay : 3000,
+    stopOnHover : true,
+    navigation:true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });
+ 
+});
+    </script>
+
+  <script>
+    $(document).ready(function() {
+
+      var owl = $("#owl-demo2");
+
+      owl.owlCarousel({
+          rows: 2,
+        itemsCustom : [
+          [0, 1],
+          [400, 1],
+      [1023, 2],
+          [1024, 3],
+          [1600, 3]
+        ],
+        navigation : false,
+    pagination : false,
+    autoPlay :false,
+
+      });
+
+
+
+    });
+  
+  
+  
+
+    $(document).ready(function() {
+     
+      var owl = $("#owl-demo2");
+     
+      owl.owlCarousel();
+     
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+     
+    });
+
+
+    </script>
+
+     <script>
+    $(document).ready(function() {
+
+      var owl = $("#owl-demo3");
+
+      owl.owlCarousel({
+        itemsCustom : [
+          [0, 1],
+          [400, 1],
+      [1023, 2],
+          [1024, 3],
+          [1600, 3]
+        ],
+        navigation : false,
+    pagination : false,
+    autoPlay :true,
+
+      });
+
+
+
+    });
+  
+  
+  
+
+    $(document).ready(function() {
+     
+      var owl = $("#owl-demo3");
+     
+      owl.owlCarousel();
+     
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+     
+    });
+
+
+    </script>
+
+
+
+    <script>
+  var acc = document.getElementsByClassName("v-accordion");
+  var i;
+  
+  var preValue = ''
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function(event) {
+      var activeList = document.getElementsByClassName("active");
+      if (activeList.length >= 2) {
+        for (let i = 0; i < activeList.length; i++) {
+          if (activeList[i].classList[0] != 'back-to-top'){
+            if ( this.textContent != preValue) {
+              activeList[i].nextElementSibling.style.maxHeight = null;
+              activeList[i].classList.remove("active");
+              var panel = this.nextElementSibling;
+              this.classList.add('active')
+              preValue = this.textContent;
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+            else {
+              activeList[i].nextElementSibling.style.maxHeight = null;
+              activeList[i].classList.remove("active");         
+            }
+          }
+        }
+      }
+      else {
+          var panel = this.nextElementSibling;
+          this.classList.add('active')
+          preValue = this.textContent;
+          panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  
+  }
+  </script>
+  
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/purecounter/purecounter.js"></script> -->
+  <script src="<?php echo $base_url_views; ?>assets/js/jquery-1.9.1.min.js"></script> 
+  <script src="<?php echo $base_url_views; ?>assets/vendor/aos/aos.js"></script>
+  <script src="<?php echo $base_url_views; ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?php echo $base_url_views; ?>assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="<?php echo $base_url_views; ?>assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="<?php echo $base_url_views; ?>assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="<?php echo $base_url_views; ?>assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <!--<script src="<?php echo $base_url_views; ?>assets/js/main.js"></script>-->
+ <script src="https://cristol.co.in/site/views/assets/js/main.js" ></script>
+
+
+
+  <?php if ($this->session->flashdata('L_strsucessMessage')) { ?>
+<script>document.getElementById('message_succsess').innerHTML =    "<?php echo $this->session->flashdata('L_strsucessMessage'); ?>";$('#message_succsess').show().delay(0).fadeIn('show');$('#message_succsess').show().delay(2000).fadeOut('show');</script>
+
+<?php } ?>
+
+<?php if ($this->session->flashdata('L_strErrorMessage')) { ?>
+
+<script>document.getElementById('message_error').innerHTML = "<?php echo $this->session->flashdata('L_strErrorMessage'); ?>";$('#message_error').show().delay(0).fadeIn('show');$('#message_error').show().delay(2000).fadeOut('show');</script>
+
+<?php } ?>
+
+
+  
+
+</body>
+
+</html>
+<script> 
+function subscribe_btn() {
+
+var email_sub = jQuery("#email_sub").val();
+if (email_sub == '') {
+    jQuery('#email_err').html("Please Enter Email Address");
+    jQuery('#email_err').show().delay(0).fadeIn('show');
+    jQuery('#email_err').show().delay(2000).fadeOut('show');
+    $('html, body').animate({
+        scrollTop: $('#email_sub').offset().top - 150
+    }, 1000);
+    return false;
+}
+
+var em = jQuery('#email_sub').val();
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+if (!filter.test(em)) {
+    jQuery('#email_err').html("Enter Valid Email Address.");
+    jQuery('#email_err').show().delay(0).fadeIn('show');
+    jQuery('#email_err').show().delay(2000).fadeOut('show');
+    return false;
+}
+
+ $('#addressForm1').submit();
+
+}
+
+</script>
