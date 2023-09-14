@@ -1,0 +1,5 @@
+[22-Aug-2023 06:05:10 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/raghnall/agentix/site/views/includes/header.php:2
+Stack trace:
+#0 /home/raghnall/agentix/site/views/products.php(1): include()
+#1 {main}
+  thrown in /home/raghnall/agentix/site/views/includes/header.php on line 2

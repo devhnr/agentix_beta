@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+    ul.navbar-text {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .main-nav .navbar-nav {
+        margin-left: 8px !important;
+        padding: 21px 0px !important;
+    }
+
+    .pro-col {
+        width: 100% !important;
+       
+    }
+
+    .main-title p{
+        width: 100%;
+    }
+
+    .pro-ico i {
+        transform: rotate(90deg);
+    }
+
+    .team-col img {
+        width: auto !important;
+        max-height: 180px;
+    }
+    
+}

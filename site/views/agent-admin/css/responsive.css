@@ -1,0 +1,101 @@
+@media only screen and (max-width: 600px) {
+    ul.navbar-text {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding-left: 10px;
+    }
+    
+    .ct-head {
+    width: 77%;
+}
+    
+    .main-nav .navbar-nav {
+        margin-left: 8px !important;
+        padding: 21px 0px !important;
+    }
+
+    .pro-col {
+        width: 100% !important;
+       
+    }
+
+    .main-title p{
+        width: 100%;
+    }
+
+    .pro-ico i {
+        transform: rotate(90deg);
+    }
+
+    .team-col img {
+        width: auto !important;
+        max-height: 180px;
+    }
+
+    .area-banner-area h1 {
+        font-size: 2em;
+    }
+
+    .area-banner-area p {
+        font-size: 18px;
+        margin-top: 15px;
+        color: var(--maincolor);
+    }
+
+    .pricing-col {
+        width: 100% !important;
+        margin-bottom: 60px;
+    }
+
+    .pricing-flex{
+        padding: 10px;
+    }
+
+    ul.more-feat li:before{
+        left: -11% !important;
+    }
+
+    .compare-modal .modal-dialog {
+ 
+        max-width: 100% !important;
+     
+    }
+
+    button.navbar-toggler {
+        border: none;
+        order: 3;
+    }
+
+    .main-nav .navbar-brand img {
+        max-height: 36px !important;
+    }
+
+    .footer-head-flex {
+        flex-direction: column;
+        /* justify-content: flex-start !important; */
+    }
+
+    .social-icon ul{
+        margin-top: 20px;
+    }
+
+    .footer-text{
+        text-align: left !important;
+        margin-top: 20px;
+    }
+
+    ul.footer-menus {
+        justify-content: flex-start;
+    }
+
+    footer h6{
+        margin-top: 20px;
+    }
+
+    
+
+    
+    
+}
