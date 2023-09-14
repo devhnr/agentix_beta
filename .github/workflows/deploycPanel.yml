@@ -15,5 +15,5 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: 172.105.49.113
-        username: 
-        password: 
+        username: raghnall_agentix_beta@agentix.in
+        password: ${{ secrets.prod_FTP_PASS }}
