@@ -1,0 +1,257 @@
+<?php
+$front_base_url = $this->config->item('front_base_url');
+$base_url 		= $this->config->item('base_url');
+$index_url 		= $this->config->item('index_url');
+$findex_url 		= $this->config->item('findex_url');
+$base_url_views = $this->config->item('base_url_views');
+$http_host = $this->config->item('http_host');
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--<meta content="width=device-width, initial-scale=1.0" name="viewport">-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>CRISTOL</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+ <link href="assets/img/favicon.png" rel="icon">
+  <!--<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="<?php echo $base_url_views; ?>assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="<?php echo $base_url_views; ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php echo $base_url_views; ?>assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="<?php echo $base_url_views; ?>assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="<?php echo $base_url_views; ?>assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="<?php echo $base_url_views; ?>assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<link rel="preload" as="font" href="<?php echo $base_url_views; ?>assets/fonts/GothamBlack.ttf" type="font/otf" crossorigin="anonymous">
+<link rel="preload" as="font" href="<?php echo $base_url_views; ?>assets/fonts/GothamLight.ttf" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" as="font" href="<?php echo $base_url_views; ?>assets/fonts/GothamBook.ttf" type="font/ttf" crossorigin="anonymous">
+
+<link rel="preload" as="font" href="<?php echo $base_url_views; ?>assets/fonts/GothamBook.ttf" type="font/ttf" crossorigin="anonymous">
+
+<link rel="preload" as="font" href="<?php echo $base_url_views; ?>assets/fonts/times-new-roman/times-new-roman.ttf" type="font/ttf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Template Main CSS File -->
+  <!--<link href="<?php echo $base_url_views; ?>assets/css/style.css" rel="stylesheet">-->
+  <link href="<?php echo $base_url_views; ?>assets/css/style.css" rel="stylesheet">
+  <link href="<?php echo $base_url_views; ?>assets/css/style-timeline.css" rel="stylesheet">
+  <!--<link href="<?php echo $base_url_views; ?>assets/css/gotham.css" rel="stylesheet">-->
+  <link href="https://fiveonlineclient.in/cristol/beta/site/views/assets/css/gotham.css" rel="stylesheet">
+
+  <!-- Owl Carousel Assets -->
+    <link href="<?php echo $base_url_views; ?>sliders/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="<?php echo $base_url_views; ?>sliders/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src = "/scripts/jquery.min.js"></script>
+    <script src = "/bootstrap/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"> 
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    
+ <style>
+.navbar > ul > li{
+     padding:10px 0 10px 20px;
+ }
+    
+    .navbar a, .navbar a:focus{
+        font-size: 14px;
+    }
+    
+    
+    .pdt_portfolio_section .pdt_box_main .pdt_box_text i{
+        font-size: 22px;
+    }
+    
+.valierror {
+    background-color: #ee2e34;
+    border-color: #ee2e34;
+    color: #fff;
+}
+
+
+.alert-message {
+    background-size: 40px 40px;
+    background-image: linear-gradient(
+135deg, rgba(255, 255, 255, .05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%, transparent 75%, transparent);
+    /* box-shadow: inset 0 -1px 0 rgb(255 255 255 / 40%); */
+    width: 100%;
+    border: 0px solid;
+    color: #fff;
+    padding: 10px;
+     position: fixed !important; 
+    animation: animate-bg 5s linear infinite;
+    display: block;
+    margin-bottom: 5px;
+    z-index: 9999;
+}
+.successmain {
+    background-color: green;
+    border-color: green;
+}
+
+
+
+    
+    </style>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+
+   
+
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container-fluid d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <ul>
+          <li>ISO 9001 </li>
+          <li>ISO 14001</li>
+          <li>ISO 45001</li>
+          <li>GMP Certified </li>
+        </ul>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+       <!--  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+        <a href="https://www.facebook.com/cristolkapl/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCbOz0zJ2JiR-0xqWkK1EFQA" class="instagram"><i class="bi bi-youtube"></i></a>
+        <a href="https://in.linkedin.com/company/krishna-antioxidants-pvt-ltd" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="<?php echo $base_url; ?>"><img src="<?php echo $base_url_views; ?>assets/img/cristol-logo.png"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+       <?php $category_list = $this->home_model->category();?>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="<?php echo $base_url; ?>">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Product Portfolio</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+            <?php  
+            if($category_list !=''){
+            foreach($category_list as $category_data) { ?>
+              <li class="dropdown"><a href="#"><span><?php echo $category_data->name?></span></a>
+
+
+              <?php $product = $this->home_model->get_product_cat($category_data->id);?>
+              <?php if($product !=''){?>
+              <ul>
+                <?php 
+                $product = $this->home_model->get_product_cat($category_data->id);
+                if ($product != ''){
+                    foreach ($product as $product_details){
+                ?>
+                <li><a href="<?php echo $base_url?>product/<?php echo $product_details->page_url?>"><?php echo $product_details->name?></a></li><?php } }?>
+              </ul>
+            <?php } ?>
+            </li>
+          <?php } }?>
+
+          <!---------------------------<  PRODUCT NAME  >-------------------------->
+
+            <?php 
+            $product_list = $this->home_model->get_product_cat($category_list->id);
+            if($product_list !=''){
+            foreach($product_list as $product_detail){
+            ?>
+            <li><a href="<?php echo $base_url?>product/<?php echo $product_detail->page_url?>"><?php echo $product_detail->name?></a></li>
+          <?php } }?>
+             <!--  <li class="dropdown"><a href="#"><span>Petrochemicals</span></a>
+              <ul>
+                <li><a href="synthetic-rubber.html">Synthetic Rubber</a></li>
+                <li><a href="thermoplastic-elastomers.html">Thermoplastic Elastomers</a></li>
+                <li><a href="polyolefins.html">Polyolefins</a></li>
+                <li><a href="styrenic-polymers.html">Styrenic Polymers</a></li>
+                <li><a href="pvc-stabilisers.html">PVC Stabilisers </a></li>
+              </ul>
+            </li>
+
+              <li><a href="lubricant-additive-range.html">Lubricant Additive Range</a></li>
+              <li><a href="agroscience.html">Agroscience</a></li>
+              <li><a href="castor-oil-derivatives.html">Castor Oil Derivatives</a></li>
+              <li><a href="inks-and-coatings.html">Inks & Coatings</a></li>
+              <li><a href="polyurethane-foam.html">Polyurethane Foam</a></li>
+              <li><a href="textiles.html">Textiles</a></li>
+              <li><a href="water-treatment.html">Water Treatment</a></li> -->
+            </ul>
+          </li>
+          <li class="dropdown"><a href="javascript:void(0)"><span>Overview</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="<?php echo $base_url; ?>about-us">About Us</a></li>
+              <li><a href="<?php echo $base_url; ?>award">Awards</a></li>
+              <li><a href="<?php echo $base_url; ?>regulatory">Regulatory (QHSE)</a></li>
+              <li><a href="<?php echo $base_url; ?>community-welfare">Community Welfare</a></li>
+              <li><a href="<?php echo $base_url; ?>infrastructure">Infrastructure</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="<?php echo $base_url;?>careers">Careers</a></li>
+          <li><a class="nav-link scrollto" href="<?php echo $base_url; ?>news-and-events">News & Events</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#">Portfolio</a></li> -->
+          <li><a class="nav-link scrollto" href="<?php echo $base_url; ?>custom-manufactur">Custom Manufacturing</a></li>
+          
+          <!-- <li class="dropdown"><a href="#"><span>Industries</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="<?php echo $base_url; ?>contact-us">Contact Us</a></li>
+        </ul>
+        <i class="bi mobile-nav-toggle bi-list"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+
+    <div id="message_error" class="valierror alert-message topalert" style="display:none;text-align: center;"></div>
+
+<div id="message_succsess" class="successmain alert-message topalert" style="display:none;text-align: center;"></div>
+
+  </header><!-- End Header -->

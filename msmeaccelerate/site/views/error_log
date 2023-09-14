@@ -1,0 +1,50 @@
+[30-Nov-2022 05:27:32 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 05:27:34 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 05:31:43 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 10:35:56 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 10:36:03 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 10:36:03 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 10:36:36 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 10:36:39 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 11:13:59 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
+[30-Nov-2022 11:43:20 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php:2
+Stack trace:
+#0 /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/index.php(1): include()
+#1 {main}
+  thrown in /home/mititeki/public_html/msmeaccelerate.in/beta/site/views/includes/header.php on line 2
