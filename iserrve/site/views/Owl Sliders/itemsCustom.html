@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Owl Carousel - itemsCustom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="jQuery Responsive Carousel - Owl Carusel">
+    <meta name="author" content="Bartosz Wojciechowski">
+
+    <!-- Owl Carousel Assets -->
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+
+    
+ <!-- Demo -->
+    <style>
+    #owl-demo .item{
+        background: #42bdc2;
+        padding: 30px 0px;
+        margin: 5px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+	.customNavigation{width:1024px; margin:0 auto; text-align:center; cursor:pointer}
+    </style>
+    
+  </head>
+  <body>
+
+      <div id="demo">
+        <div id="owl-demo" class="owl-carousel">          
+          <div class="item">   <div class="category-banner5">
+
+                    <a href="#" class="inner">
+
+                        <div class="image"><img src="img/icon 5.png" alt="">
+
+                        </div>
+
+                        <div class="content">
+
+                            <h3 class="title">Employee Benefits</h3>
+
+                        </div>
+
+                    </a>
+
+                </div></div>
+          <div class="item">  <div class="category-banner5">
+
+            <a href="#" class="inner">
+
+                <div class="image"><img src="img/icon 2.png" alt="">
+
+                </div>
+
+                <div class="content">
+
+                    <h3 class="title">Marine</h3>
+
+                </div>
+
+            </a>
+
+        </div></div>
+          <div class="item">     <div class="category-banner5">
+
+            <a href="#" class="inner">
+
+                <div class="image"><img src="img/icon 3.png" alt="">
+
+                </div>
+
+                <div class="content">
+
+                    <h3 class="title">Property</h3>
+
+                </div>
+
+            </a>
+
+        </div></div>
+          <div class="item">    <div class="category-banner5">
+
+            <a href="#" class="inner">
+
+                <div class="image"><img src="img/icon 4.png" alt="">
+
+                </div>
+
+                <div class="content">
+
+                    <h3 class="title">Engineering</h3>
+
+                </div>
+
+            </a>
+
+        </div>
+</div>
+          <div class="item">   <div class="category-banner5">
+
+            <a href="#" class="inner">
+
+                <div class="image"><img src="img/icon 1.png" alt="">
+
+                </div>
+
+                <div class="content">
+
+                    <h3 class="title">Liability</h3>
+
+                </div>
+
+            </a>
+
+        </div></div>
+      
+
+        </div>
+    </div>
+    
+    <div class="customNavigation">
+      <a class="btn prev">Previous</a>
+      <a class="btn next">Next</a>
+	</div>
+
+    <script src="assets/js/jquery-1.9.1.min.js"></script> 
+    <script src="owl-carousel/owl.carousel.js"></script>
+
+    <script>
+    $(document).ready(function() {
+
+      var owl = $("#owl-demo");
+
+      owl.owlCarousel({
+
+        // Define custom and unlimited items depending from the width
+        // If this option is set, itemsDeskop, itemsDesktopSmall, itemsTablet, itemsMobile etc. are disabled
+        // For better preview, order the arrays by screen size, but it's not mandatory
+        // Don't forget to include the lowest available screen size, otherwise it will take the default one for screens lower than lowest available.
+        // In the example there is dimension with 0 with which cover screens between 0 and 450px
+        
+        itemsCustom : [
+          [0, 1],
+          [400, 1],
+		  [1023, 2],
+          [1024, 3],
+          [1600, 3]
+        ],
+        navigation : false,
+		pagination : false,
+		autoPlay :true,
+
+      });
+
+
+
+    });
+	
+	
+	
+
+    $(document).ready(function() {
+     
+      var owl = $("#owl-demo");
+     
+      owl.owlCarousel();
+     
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+     
+    });
+
+
+    </script>
+    
+
+
+  </body>
+</html>

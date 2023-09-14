@@ -1,0 +1,264 @@
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: none!important;
+    vertical-align: middle;
+}
+div#example_filter {
+    margin-top: 0px!important;
+    z-index: 1;
+}
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 500;
+}
+.form-control {
+    border-color: #f9f9f9;
+    background-color: #efefef;
+    color: #212529;
+    font-size: 16px;
+}
+
+/***poicy features use*****/
+
+.text-muted {
+    font-size: 13px;
+    color: #6c757d!important;
+}
+.card-body strong{
+	font-size:15px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #37b2bb;
+    background-color: #efefef!important;
+}
+.card-title {
+		float:none!important;
+   text-align:center!important;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+.card-header {
+
+    background-color: transparent;
+    border-bottom: none;
+    padding: 5px 10px;
+    position: relative;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 50px;
+    padding: 10px;
+}
+.card-primary:not(.card-outline)>.card-header {
+    background-color:#dffce5;
+		color:black;
+}
+.card {
+    margin-bottom: 1.875rem;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+
+    border-radius: 7px!important;
+    /* box-shadow: 0px 12px 23px 0px rgb(63 154 224 / 4%); */
+    /* height: calc(100% - 30px); */
+}
+
+.shadows{
+  border-right: 5px solid #dee2e6;
+}
+/******Escalation -Matrix css***********/
+.card_n {
+    box-shadow: none!important;
+    margin-bottom: 1rem;
+    border-radius: 7px!important;
+}
+.float-none{
+	  float:none!important;
+}
+.badge-success {
+    color:#0e0d0d!important;
+    background-color: #ffe4bb!important;
+}
+.badge-padding{
+		font-size:14px!important;
+		font-weight:500!important;
+		border-radius:15px!important;
+		padding: 5px 20px!important;
+}
+
+.badge-success1 {
+    color: #0e0d0d!important;
+    background-color:#bce9ff!important;
+}
+.text-dark{
+    color:#181212!important;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+/******** Summary css********/
+.policy-label {
+    padding: 30px 20px;
+
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.policy-label-icon {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    box-shadow: 0px 17px 26px 2px rgb(0 0 0 / 9%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.policy-label-icon i {
+    font-size: 22px;
+    color: var(--maincolor);
+}
+.policy-text {
+    margin-left: 10px;
+}
+
+.policy-text h5 {
+    font-size: 21px;
+    color: #18bdc9;
+}
+
+.policy-tpa {
+    display: flex;
+    align-items: center;
+}
+
+.policy-tpa h6 {
+    margin-right: 91px;
+}
+
+.policy-tpa h6 span {
+    color: #8b8888;
+}
+
+.sum-counter .card {
+    padding: 20px 10px 15px;
+}
+
+.sum-counter .card h6 {
+    font-size: 14px;
+}
+
+.sum-counter .card span {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* reports css */
+/* .mt-6 {
+margin-top: 3.5rem!important;
+} */
+/* .card-header{
+
+display: flex;
+} */
+
+/* .card-title {
+align-items: center;
+width: 60%;
+display: flex;
+} */
+.card-tools
+{
+width: 40%;
+text-align: end;
+float: right;
+}
+
+.card-body-n {
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+min-height: 1px;
+padding: 0px!Important;
+
+}
+
+.tabflex {
+width: 50%;
+margin: 0px;
+}
+.tab button {
+margin: 1px;
+   width: 100%;
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 0px;
+transition: 0.3s;
+font-size: 11px;
+border-radius: 20px;
+}
+.info-box-icon {
+display: flex;
+padding: 5px;
+border-radius: 50px;
+margin-right: 9px;
+}
+.icon-medium{
+font-size: 12px;
+}
+
+.tab {
+justify-content: center;
+display: inline;
+background-color: #fff;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.profile-user-img {
+border: 5px solid #E5EAF5;
+margin: 0 auto;
+padding: 3px;
+width: 100px;
+height: 100px!important;
+box-shadow: 0px 0px 30px 10px rgb(0 0 0 / 6%);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.tab-p {
+font-size: 28px;
+font-weight: 600;
+line-height: 23px;
+color: #0b6370;
+}
+
+.small-box .line {
+margin-top: 5px;
+height: 4px;
+border-radius: 1.25rem;
+width: 92%;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+
+}
+.card1 {
+background-color: #fff;
+transition: all .5s ease-in-out;
+position: relative;
+border-radius: 1.25rem;
+margin: 0 0.5em;
+}

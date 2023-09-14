@@ -1,0 +1,9 @@
+Employee ID,Member Name,Gender ( M / F),Relationship,Date of birth (DD-MM-YYYY),Age,Mobile Number,Email ID,Sum Insured,Date of Joining,Member_ID,endorsement no.,Endoresment date,type of addition,Date of leaving
+prince12,Rajesh gaikwad,M,Employee,26-06-1983,40,9833515690,mudit.fiveonline@gmail.com,1500000,01-01-2022,4567888,0443434436 00,01-01-2022,delete,
+prince12,Rajeshwari Gaikwad,F,Spouse,27-07-1983,40,9833515690,mudit.fiveonline@gmail.com,1500000,01-01-2022,4567889,0443434436 00,01-01-2022,delete,
+prince12,Jayant Gaikwad,M,Son1,07-03-2010,13,9833515690,mudit.fiveonline@gmail.com,1500000,01-01-2022,4567890,0443434436 00,01-01-2022,add,
+prince12,Vishwa Gaikwad,M,Son2,13-10-2014,9,9833515690,mudit.fiveonline@gmail.com,1500000,01-01-2022,4567891,0443434436 00,01-01-2022,add,
+prince22,Raj malhotra,M,Employee,25-07-1968,55,8356068720,vignesh.fiveonline@gmail.com,1500000,01-01-2022,4567892,0443434436 00,01-01-2022,add,
+prince22,Krishna Malhotra,F,Spouse,15-02-1973,50,8356068720,vignesh.fiveonline@gmail.com,1500000,01-01-2022,4567893,0443434436 00,01-01-2022,add,
+prince22,Rashi Malhotra,F,Daughter,02-02-1990,23,8356068720,vignesh.fiveonline@gmail.com,1500000,01-01-2022,4567894,0443434436 00,01-01-2022,add,
+prince3,Mamta Thakker,M,Employee,02-09-1973,52,9874545223,adarsh.fiveonline@gmail.com,1500000,01-01-2022,4567895,0443434436 00,01-01-2022,add,01-02-2022

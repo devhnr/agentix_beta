@@ -1,0 +1,4 @@
+Employee ID,Member Name,Gender ( M / F),Relationship,Date of birth (DD-MM-YYYY),Age,Mobile Number,Email ID,Sum Insured,Date of Joining,Member_ID,endorsement no.,Endoresment date,type of addition,Date of leaving
+Ragh0012,Krishna Malhotra,F,Spouse,15-02-1973,50,9874545223,demo@test.com,200000,01-01-2022,4567893,0443434436 00,01-01-2022,add,
+Ragh0013,Rashi Malhotra,F,Employee,02-02-1990,23,9874545223,demo@test.com,200000,01-01-2022,4567894,0443434436 00,01-01-2022,add,
+Ragh0014,Mamta Thakker,M,Employee,02-09-1973,50,9874545223,demo@test.com,200000,01-01-2022,4567895,0443434436 00,01-01-2022,delete,01-02-2022
