@@ -54,11 +54,6 @@ $config['front_base_url'] = "http://".$_SERVER['HTTP_HOST']."/agentix/beta/";
 $config['base_url_views'] = "http://".$_SERVER['HTTP_HOST']."/agentix/beta/admin/application/views/";
 $config['upload'] = $_SERVER['DOCUMENT_ROOT']."/agentix/beta/upload/";
 
-
-
-
-
-
 /*
 |--------------------------------------------------------------------------
 | Index File
