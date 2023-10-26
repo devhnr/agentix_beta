@@ -4,6 +4,8 @@
 
 <div class="container">
 
+	<?php if($all_policy_repository != ''){ ?>
+
     <div class="row">
 
         <div class="col-lg-12 text-center mb-3">
@@ -197,6 +199,10 @@
     <?php } ?>
 
     </div>
+	<?php } else {?>
+	<h3>coming soon</h3>
+		
+		<?php } ?>
 
 </div>
 

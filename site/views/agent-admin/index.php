@@ -6,8 +6,12 @@
             <div class="row">
 
                 <div class="col-lg-12">
-
-                    <h3 class="mb-5">Try Out Feature in Action</h3>
+                    <div class="main-title mb-5 text-center">
+                        <h3 class="">Try Out Features in Action! </h3>
+                         <div class="line-gree-sm"></div>
+                    </div>
+                   
+                    
 
                 </div>
 
@@ -58,7 +62,16 @@
 
                 <div class="col-lg-3">
 
-                    <a type="button"  data-bs-toggle="modal" data-bs-target="#newsletter" class="btn action-sec mb-4">
+                    <!-- <a type="button"  data-bs-toggle="modal" data-bs-target="#newsletter" class="btn action-sec mb-4">
+                        <div class="act-img">
+                        <img src="<?php echo $base_url_views ?>agent-admin/img/act-ico4.png" class="w-100" alt="">
+                        </div>
+
+                        <span>New Product Launches</span>
+
+                    </a> -->
+
+                    <a href="<?php echo $base_url;?>agent-admin/new-products" class="btn action-sec mb-4">
                         <div class="act-img">
                         <img src="<?php echo $base_url_views ?>agent-admin/img/act-ico4.png" class="w-100" alt="">
                         </div>
@@ -71,7 +84,16 @@
 
                 <div class="col-lg-3">
 
-                    <a type="button"  data-bs-toggle="modal" data-bs-target="#newsletter" class="btn action-sec mb-4">
+                    <!-- <a type="button"  data-bs-toggle="modal" data-bs-target="#newsletter" class="btn action-sec mb-4">
+                        <div class="act-img">
+                        <img src="<?php echo $base_url_views ?>agent-admin/img/act-ico5.png" class="w-100" alt="">
+                        </div>
+
+                        <span>Client Educational Content</span>
+
+                    </a> -->
+
+                     <a href="<?php echo $base_url;?>agent-admin/client-educational-content" class="btn action-sec mb-4">
                         <div class="act-img">
                         <img src="<?php echo $base_url_views ?>agent-admin/img/act-ico5.png" class="w-100" alt="">
                         </div>
@@ -108,8 +130,11 @@
             <div class="row">
 
                 <div class="col-lg-12">
-
-                    <h4 class="mb-4">Offerings you can't miss</h4>
+                    <div class=" main-title text-center mb-3">
+                        <h4 class=" beaut">Offerings you can't miss</h4>
+                        <div class="line-gree-sm"></div>
+                    </div>  
+                    
 
                 </div>
 
@@ -131,29 +156,34 @@
 
                             <ul>
 
-                                <li>Email Quotation to Client</li>
+                                <li>Sell Insurance policies from multiple insurers in your own code/license</li>
 
-                                <li>Product Rating</li>
-
-                            </ul>
-
-
-
-                            <ul id="more">
-
-                                <li>Lorem ipsum dolor sit amet.</li>
-
-                                <li>Product Rating</li>
-
-                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Detailed Product comparisons and ratings</li>
+                                
+                                <li>No Sharing of commission – You own your client and your business</li>
+                                
+                                <li>Generate quality leads</li>
 
                             </ul>
 
-                            <button onclick="myFunction()" id="feaBtn">More Features</button>
+
+
+                            <!--<ul id="more">-->
+
+                            <!--    <li>Lorem ipsum dolor sit amet.</li>-->
+
+                            <!--    <li>Product Rating</li>-->
+
+                            <!--    <li>Lorem ipsum dolor sit amet.</li>-->
+
+                            <!--</ul>-->
+
+                            <!--<button onclick="myFunction()" id="feaBtn">More Features</button>-->
 
 
 
-                            <a href="#" class="btn btn-subs">Subscribe</a>
+                            <!--<a href="#" class="btn btn-subs">Subscribe</a>-->
+                            <p class="text-center">Coming Soon</p>
 
                         </div>
 
@@ -175,29 +205,34 @@
 
                             <ul>
 
-                                <li>Email Quotation to Client</li>
+                                <li>CRM Tool for Streamlined client management </li>
 
-                                <li>Product Rating</li>
-
-                            </ul>
-
-
-
-                            <ul id="more_1">
-
-                                <li>Lorem ipsum dolor sit amet.</li>
-
-                                <li>Product Rating</li>
-
-                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Exclusive Partner Services at discounted rates</li>
+                                
+                                <li>Complete Employee Benefits Solutions</li>
+                                
+                                <li>Claims Assistance & Consulting</li>
 
                             </ul>
 
-                            <button onclick="myFunction1()" id="feaBtn_1">More Features</button>
+
+
+                            <!--<ul id="more_1">-->
+
+                            <!--    <li>Lorem ipsum dolor sit amet.</li>-->
+
+                            <!--    <li>Product Rating</li>-->
+
+                            <!--    <li>Lorem ipsum dolor sit amet.</li>-->
+
+                            <!--</ul>-->
+
+                            <!--<button onclick="myFunction1()" id="feaBtn_1">More Features</button>-->
 
 
 
-                            <a href="#" class="btn btn-subs">Subscribe</a>
+                            <!--<a href="#" class="btn btn-subs">Subscribe</a>-->
+                            <p class="text-center">Coming Soon</p>
 
                         </div>
 
@@ -218,30 +253,30 @@
                         <div class="offering-feature">
 
                             <ul>
-
-                                <li>Email Quotation to Client</li>
-
-                                <li>Product Rating</li>
-
+                                <li>Curated library of client engagement content</li>
+                                <li>Personalized Agent Website and Social Media Setups</li>
+                                <li>Enhanced Online Presence with High-Quality creatives</li>
+                                <li>Email Marketing Templates</li>
                             </ul>
 
 
 
-                            <ul id="more_2">
+                            <!--<ul id="more_2">-->
 
-                                <li>Lorem ipsum dolor sit amet.</li>
+                            <!--    <li>Lorem ipsum dolor sit amet.</li>-->
 
-                                <li>Product Rating</li>
+                            <!--    <li>Product Rating</li>-->
 
-                                <li>Lorem ipsum dolor sit amet.</li>
+                            <!--    <li>Lorem ipsum dolor sit amet.</li>-->
 
-                            </ul>
+                            <!--</ul>-->
 
-                            <button onclick="myFunction2()" id="feaBtn_2">More Features</button>
+                            <!--<button onclick="myFunction2()" id="feaBtn_2">More Features</button>-->
 
 
 
-                            <a href="#" class="btn btn-subs">Subscribe</a>
+                            <!--<a href="#" class="btn btn-subs">Subscribe</a>-->
+                            <p class="text-center">Coming Soon</p>
 
                         </div>
 
@@ -288,7 +323,8 @@
                   <img src="<?php echo $base_url_views ?>agent-admin/img/notification.png" alt="">
               </div>
               <div class="not-desc">
-                  <p>You will Receive our most popular Client Educational Content to your Registered Email Address Every Week</p>
+                  <p>Greetings and welcome to our latest edition, where we have lots of exciting updates and news. Watch your inbox, we'll reach you soon!
+</p>
               </div>
           </div>
       </div>

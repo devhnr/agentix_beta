@@ -133,16 +133,17 @@ $route['forgot-password']  = "home/forgot_password";
 /* AGent admin */
 
 $route['agent-admin']  = "agent_admin/index";
-$route['agent-admin/new-products']  = "agent_admin/new_products";
-$route['agent-admin/client-educational-content']  = "agent_admin/client_educational_content";
-$route['agent-admin/daily-poster']  = "agent_admin/daily_poster";
-$route['agent-admin/recommended-poster']  = "agent_admin/recommended_poster";
-$route['agent-admin/article-poster']  = "agent_admin/article_poster";
 $route['agent-admin/product-comparison']  = "agent_admin/product_comparison";
 $route['agent-admin/product-respository/(:any)']  = "agent_admin/product_respository/$1";
 $route['agent-admin/compare']  = "agent_admin/compare";
 $route['agent-admin/compare-list/(:any)']  = "agent_admin/compare_list/$1";
 $route['agent-admin/logout']  = "agent_admin/logout";
+$route['agent-admin/new-products']  = "agent_admin/new_products";
+$route['agent-admin/client-educational-content']  = "agent_admin/client_educational_content";
+$route['agent-admin/recommended-poster']  = "agent_admin/recommended_poster";
+$route['agent-admin/daily-poster']  = "agent_admin/daily_poster";
+$route['agent-admin/article-poster']  = "agent_admin/article_poster";
+
 
 $route['agent-admin/repository-of-brochure']  = "agent_admin/repository_of_brochure";
 

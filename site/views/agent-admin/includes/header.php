@@ -27,7 +27,7 @@ $http_host = $this->config->item('http_host');
     <link rel="stylesheet" href="<?php echo $base_url_views ?>agent-admin/css/font-icons.min.css">
 
     <link rel="stylesheet" href="<?php echo $base_url_views ?>agent-admin/css/responsive.css">
-
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <style>
 
 .valierror {
@@ -168,6 +168,22 @@ $http_host = $this->config->item('http_host');
 
 }
 
+ul.dropdown-menu.show {
+    left: unset !important;
+    right: 0;
+}
+.dropdown-toggle:after {
+    margin-left: 0;
+    border: 0;
+    display: inline-block;
+    content: "\e842";
+    font-family: feather !important;
+    position: absolute;
+    color: #8d8d8d;
+    font-size: 14px;
+    top: 13%;
+}
+
 </style>
 </head>
 
@@ -207,25 +223,25 @@ $http_host = $this->config->item('http_host');
 
                     <li class="nav-item">
 
-                        <a class="nav-link active" aria-current="page" href="#">Our Products</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo $base_url; ?>#our_products">Our Products</a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">All Details</a>
+                        <a class="nav-link" href="<?php echo $base_url; ?>blogs">Agent resources</a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">Agent Resources</a>
+                        <a class="nav-link" href="<?php echo $base_url; ?>agent-admin/product-comparison">Compare products</a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="<?php echo $base_url; ?>agent-admin/client-educational-content">Educate clients</a>
 
                     </li>
 
@@ -237,12 +253,18 @@ $http_host = $this->config->item('http_host');
 
                 <ul class="right-menu">
 
-                    <li><a href="#" class="nav-link"><i class="feather icon-feather-bell"></i></a></li>
+                    <!-- <li><a href="#" class="nav-link"><i class="feather icon-feather-bell"></i></a></li> -->
+                   
+                    <li class="dropdown">
 
-                    <li>
-
-                        <a href="#" class="nav-link"><i class="feather icon-feather-user"></i></a>
-
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="feather icon-feather-user"></i>
+                        </a>
+                        
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="<?php echo $base_url; ?>agent-admin/logout">Signout</a></li>
+                        
+                      </ul>
                     </li>
 
                 </ul>
@@ -251,4 +273,4 @@ $http_host = $this->config->item('http_host');
 
         </nav>
 
-    </header>           
+    </header>

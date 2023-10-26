@@ -46,11 +46,11 @@
 
                             <ul class="footer-menus">
 
-                                <li><a href="#">Technology</a></li>
+                                <li><a href="<?php echo $base_url?>products">Products</a></li>
 
-                                <li><a href="#">Insurers</a></li>
+                                <li><a href="<?php echo $base_url?>services">Services</a></li>
 
-                                <li><a href="<?php echo $base_url?>signup">Sign up</a></li>
+                                <li><a href="<?php echo $base_url?>pricing">Pricing</a></li>
 
                             </ul>
 
@@ -60,11 +60,11 @@
 
                             <ul class="footer-menus">
 
-                                <li><a href="#">Work with us</a></li>
+                                <li><a href="<?php echo $base_url?>about-us">About us</li>
 
-                                <li><a href="#">FAQs</a></li>
+                                <li><a href="<?php echo $base_url?>signup">Sign up for Free</a></li>
 
-                                <li><a href="#">Referral program</a></li>
+                                <li><a href="<?php echo $base_url?>login">Login</a></li>
 
                             </ul>
 
@@ -76,9 +76,9 @@
 
                             <ul class="footer-menus">                               
 
-                                <li><a href="#">contact@agentix.com</a></li>
+                               <li><a href="mailto:contact@agentix.com">contact@agentix.com</a></li>
 
-                                <li><a href="#">(+91)-9987764627</a></li>
+                                <li><a href="tel:+919987764627">(+91)-9987764627</a></li>
 
                             </ul>
 
@@ -98,7 +98,7 @@
 
                     </ul>
 
-                    <p>Made with ♡ favorite in India</p>
+                    <p>Made with ♡ in India</p>
 
                     <p>© Mititek Ventures Pvt Ltd | All rights reserved</p>
 
@@ -112,17 +112,21 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
     <script>
 
         function myFunction() {

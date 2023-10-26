@@ -38,6 +38,7 @@ use PHPMailer\PHPMailer\Exception;
   	function index(){ 
 
 		//echo $_GET['compareids'];
+		
 		$data['error'] = "";
 		$this->load->view('agent-admin/compare_policies',$data);
 	}

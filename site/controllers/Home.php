@@ -112,6 +112,9 @@ use PHPMailer\PHPMailer\Exception;
 
 	
 
+
+	
+
 	function login()
 
 	{  
@@ -639,7 +642,9 @@ use PHPMailer\PHPMailer\Exception;
 
 				$AddAttachment = array();
 
-				$name = $data['agent_name'];
+				//$name = $data['agent_name'];
+
+				$name = 'Agentix';
 
 
 				$html = $this->load->view('agent-admin/email_temp/register_mail', $data, true);
@@ -1070,7 +1075,7 @@ use PHPMailer\PHPMailer\Exception;
 			//Server settings
 			$mail->SMTPDebug = 0;                                       // Enable verbose debug output
 			$mail->isSMTP();                                            // Set mailer to use SMTP
-			$mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+			$mail->Host       = 'node7388.myfcloud.com';  // Specify main and backup SMTP servers
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 			$mail->Username   = 'digtialagents@agentix.in';      // SMTP username
 			$mail->Password   = 'casyojbusbbfvjpu';                   // SMTP password

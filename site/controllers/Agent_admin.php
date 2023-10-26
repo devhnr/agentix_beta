@@ -72,6 +72,7 @@ use PHPMailer\PHPMailer\Exception;
 		$data['all_company_name'] = $this->agent_admin_model->all_company_name();
 
 		$data['get_sum_insured_detail'] = $this->agent_admin_model->get_sum_insured_detail();
+		
 
 		//echo"<pre>";print_r($data);echo"</pre>";exit;
 		$this->load->view('agent-admin/compare_list',$data);
@@ -114,11 +115,14 @@ use PHPMailer\PHPMailer\Exception;
     function compare_policy(){
 
     	//echo "sd";exit;
-
+    	$compare_count = 0;
     	if($this->session->userdata('compare_array') == ''){
     		$dataArray = array();
+    		$compare_count = 1;
     	}else{
     		$dataArray = $this->session->userdata('compare_array');
+
+
     	}
 
     	//$dataArray = array();
@@ -137,7 +141,17 @@ use PHPMailer\PHPMailer\Exception;
     	}
 
 
+
     	$this->session->set_userdata('compare_array',$dataArray);
+
+    	 if($this->session->userdata('compare_array') != ''){
+		        $compare_count = 0;
+		        foreach($this->session->userdata('compare_array') as $key => $value){
+		            $compare_count += 1;
+		        }
+		    }
+
+		$this->session->set_userdata('compare_array_count',$compare_count);
 
     	echo "1";
 
@@ -150,6 +164,9 @@ use PHPMailer\PHPMailer\Exception;
 	{ 	
 		$originalArray = $this->session->userdata('compare_array');
 		$elementToRemove  = "$policies_id|$premium_amount|$sum_insured";
+		$elementToRemove = urldecode($elementToRemove);
+		// echo"<pre>";print_r($originalArray);echo"</pre>";
+		// echo"<pre>";print_r($elementToRemove);echo"</pre>";exit;
 
 		$index = array_search($elementToRemove, $originalArray);
 
@@ -160,6 +177,15 @@ use PHPMailer\PHPMailer\Exception;
 		$newArray = array_values($originalArray);
 
 		$this->session->set_userdata('compare_array',$newArray);
+
+		if($this->session->userdata('compare_array') != ''){
+		        $compare_count = 0;
+		        foreach($this->session->userdata('compare_array') as $key => $value){
+		            $compare_count += 1;
+		        }
+		    }
+
+		$this->session->set_userdata('compare_array_count',$compare_count);
 
 		$this->session->set_flashdata('L_strsucessMessage','Compare Deleted Successfully!');
 
@@ -174,6 +200,8 @@ use PHPMailer\PHPMailer\Exception;
 		$originalArray = $this->session->userdata('compare_array');
 		$elementToRemove  = "$policies_id|$premium_amount|$sum_insured";
 
+		$elementToRemove = urldecode($elementToRemove);
+
 		$index = array_search($elementToRemove, $originalArray);
 
 		if ($index !== false) {
@@ -183,6 +211,15 @@ use PHPMailer\PHPMailer\Exception;
 		$newArray = array_values($originalArray);
 
 		$this->session->set_userdata('compare_array',$newArray);
+
+		if($this->session->userdata('compare_array') != ''){
+		        $compare_count = 0;
+		        foreach($this->session->userdata('compare_array') as $key => $value){
+		            $compare_count += 1;
+		        }
+		    }
+
+		$this->session->set_userdata('compare_array_count',$compare_count);
 
 		$this->session->set_flashdata('L_strsucessMessage','Compare Deleted Successfully!');
 
@@ -524,11 +561,14 @@ use PHPMailer\PHPMailer\Exception;
 
 		$AddAttachment = array();
 
-		$name = $data['name'];
+		//$name = $data['name'];
+		$name = $this->session->userdata('name');
 
 		$data['compare_url'] = $compare_url;
 
 		$html = $this->load->view('agent-admin/email_temp/product_compare_mail', $data, true);
+
+		//echo $html;exit;
 
 		//$this->mailsent($to,$subject,$message,$addcc,$AddAttachment,$name);
 
@@ -539,7 +579,29 @@ use PHPMailer\PHPMailer\Exception;
 
 		redirect($this->config->item('base_url')."agent-admin/compare");
 
-		//echo "<pre>";print_r($message);echo"</pre>";exit;
+		//
+	}
+
+	function test_mail_simple(){
+
+		//echo "sd";exit;
+		$to = 'devang.hnrtechnologies@gmail.com';				
+
+		$subject  = 'check mail'; 
+
+		$addcc = array();
+
+		$AddAttachment = array();
+
+		$message="Meesage Text Come here";
+
+		$name="";
+
+		if($this->mailsent($to,$subject,$message,$addcc,$AddAttachment,$name)){
+			echo "Successfully";
+		}else{
+			echo "fail";
+		}
 	}
 
 	function product_respository($page_url){
@@ -575,6 +637,23 @@ use PHPMailer\PHPMailer\Exception;
 			//$fileInfo = $this->file->getRows(array('id' => $id));            
 			//file path      
 			$file = $this->config->item('upload').'product_repository/'.$filename;      
+			//echo $file;exit;      
+			//download file from directory      
+			force_download($file, NULL);    
+		}
+
+	}
+
+	function poster_doc_download($filename){
+
+		if(!empty($filename)){      
+			//load download helper      
+			//echo $doc_name;exit;      
+			$this->load->helper('download');            
+			//get file info from database      
+			//$fileInfo = $this->file->getRows(array('id' => $id));            
+			//file path      
+			$file = $this->config->item('upload').'poster/'.$filename;      
 			//echo $file;exit;      
 			//download file from directory      
 			force_download($file, NULL);    
@@ -656,7 +735,7 @@ use PHPMailer\PHPMailer\Exception;
 
 		//$AddAttachment = array();
 
-		$name = $data['name'];
+		
 
 		$message = '<!doctype html> <html>
 
@@ -939,6 +1018,10 @@ use PHPMailer\PHPMailer\Exception;
 		
 		$html = $this->load->view('agent-admin/email_temp/product_repositroy_mail', $data, true);
 
+		$name = $this->session->userdata('name');
+
+		//echo "<pre>";print_r($this->session->userdata('name'));echo"</pre>";exit;
+
 		//$this->mailsent_with_attachment_new($to,$subject,$message,$addcc,$AddAttachment,$name);
 
 		$this->mailsent_with_attachment_new($to,$subject,$html,$addcc,$AddAttachment,$name);
@@ -1029,28 +1112,64 @@ use PHPMailer\PHPMailer\Exception;
 		}
 	}
 
-
-	function test_mail(){
-
-		//echo "sd";exit;
-		$to = 'devang.hnrtechnologies@gmail.com';				
-
-		$subject  = 'Thank you for product Respository - Agentix'; 
-
-		$addcc = array();
-
-		$AddAttachment = array('http://localhost/agentix/beta/upload/product_repository/1693804919.4555.pdf');
-
-		$message="dd";
-
-		$name="";
-
-		if($this->mailsent_with_attachment_new($to,$subject,$message,$addcc,$AddAttachment,$name)){
-			echo "Successfully";
-		}else{
-			echo "fail";
-		}
+	function new_products(){  
+		$data['error'] = "";
+		$data['new_products'] =$this->agent_admin_model->get_all_new_products();
+		//echo "<pre>";print_r($data);echo"</pre>";exit;
+		$this->load->view('agent-admin/new_products',$data);
 	}
+
+	function client_educational_content(){  
+		$data['error'] = "";
+		$data['recommended_poster'] =$this->agent_admin_model->get_recommended_poster();
+		$data['daily_poster'] =$this->agent_admin_model->get_daily_poster();
+		$data['daily_poster'] =$this->agent_admin_model->get_daily_poster();
+		$data['all_blogs'] =$this->agent_admin_model->get_all_blogs();
+
+		//echo "<pre>";print_r($data);echo"</pre>";exit;
+		$this->load->view('agent-admin/client_educational_content',$data);
+	}
+
+	function recommended_poster(){  
+		$data['error'] = "";
+		$data['recommended_poster'] =$this->agent_admin_model->get_recommended_poster();
+		$this->load->view('agent-admin/recommended_poster',$data);
+	}
+
+	function daily_poster(){  
+		$data['error'] = "";
+		$data['daily_poster'] =$this->agent_admin_model->get_daily_poster();
+		$this->load->view('agent-admin/daily_poster',$data);
+	}
+
+	function article_poster(){  
+		$data['error'] = "";
+		$data['all_blogs'] =$this->agent_admin_model->get_all_blogs();
+		$this->load->view('agent-admin/article_poster',$data);
+	}
+
+
+	// function test_mail(){
+
+	// 	//echo "sd";exit;
+	// 	$to = 'devang.hnrtechnologies@gmail.com';				
+
+	// 	$subject  = 'Thank you for product Respository - Agentix'; 
+
+	// 	$addcc = array();
+
+	// 	$AddAttachment = array('http://localhost/agentix/beta/upload/product_repository/1693804919.4555.pdf');
+
+	// 	$message="dd";
+
+	// 	$name="";
+
+	// 	if($this->mailsent_with_attachment_new($to,$subject,$message,$addcc,$AddAttachment,$name)){
+	// 		echo "Successfully";
+	// 	}else{
+	// 		echo "fail";
+	// 	}
+	// }
 
 	function mailsent_with_attachment_new($to,$subject,$message,$addcc,$AddAttachment,$name)
 
@@ -1066,11 +1185,11 @@ use PHPMailer\PHPMailer\Exception;
 
 			//Server settings
 
-			$mail->SMTPDebug = 2;                                       // Enable verbose debug output
+			$mail->SMTPDebug = 0;                                       // Enable verbose debug output
 
 			$mail->isSMTP();                                            // Set mailer to use SMTP
 
-			$mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+			$mail->Host       = 'node7388.myfcloud.com';  // Specify main and backup SMTP servers
 
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 
@@ -1188,7 +1307,7 @@ use PHPMailer\PHPMailer\Exception;
 			//Server settings
 			$mail->SMTPDebug = 0;                                       // Enable verbose debug output
 			$mail->isSMTP();                                            // Set mailer to use SMTP
-			$mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+			$mail->Host       = 'node7388.myfcloud.com';  // Specify main and backup SMTP servers
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 			$mail->Username   = 'digtialagents@agentix.in';      // SMTP username
 			$mail->Password   = 'casyojbusbbfvjpu';                   // SMTP password

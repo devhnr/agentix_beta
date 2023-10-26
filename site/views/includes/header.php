@@ -194,6 +194,6 @@ $http_host = $this->config->item('http_host');
         </nav>
 
     </header>
-     <div id="message_error" class="valierror alert-message topalert" style="display:none;text-align: center;position: fixed;"></div>
-    <div id="message_succsess" class="successmain alert-message topalert" style="display:none;text-align: center;position: fixed;">
+     <div id="message_error" class="valierror alert-message topalert" style="z-index: 9;display:none;text-align: center;position: fixed;"></div>
+    <div id="message_succsess" class="successmain alert-message topalert" style="z-index: 9;display:none;text-align: center;position: fixed;">
     </div>

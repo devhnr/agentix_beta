@@ -202,6 +202,23 @@
                 </a>
             </li>
             <li class="divider"></li> 
+			
+			<li>
+                <a class="ajax-disable" href="<?php echo $base_url;?>poster/lists">
+                    <span style="font-size:14px;" class="fa fa-lock"></span>
+                    Poster
+                </a>
+            </li>
+            <li class="divider"></li> 
+			
+			
+			<li>
+                <a class="ajax-disable" href="<?php echo $base_url;?>new_products/lists">
+                    <span style="font-size:14px;" class="fa fa-lock"></span>
+                    New Products
+                </a>
+            </li>
+            <li class="divider"></li> 
 
         </ul>
 

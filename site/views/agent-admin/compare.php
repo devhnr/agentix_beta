@@ -117,7 +117,7 @@
 
                                             </div>
 
-                                            <div class="policy-chart">
+                                           <!--  <div class="policy-chart">
                                             
                                                 <?php if($policies_data->image !=''){?>
 
@@ -132,7 +132,7 @@
 
                                                
 
-                                            </div>
+                                            </div> -->
 
                                         </div>
 
@@ -296,9 +296,75 @@
                                 ?>
 
                                 <?php 
+								/*$a=array();*/
+								 $b =array(); 
+								$blankArray = array();
+								foreach($compare_name as $compare_name_data){ 
+									
+									
+									$get_compare_id_new = $this->agent_admin_model->get_compare_title_detail($compare_name_data->id);
+									
+									
+									
+									foreach($get_compare_id_new as $get_compare_name_new){ 
+									
+									//echo "<pre>";print_r($get_compare_name_new);echo "</pre>";
+									
+									
+										
+										foreach($this->session->userdata('compare_array') as $key1 => $value1){
+											
+											
+
+                                            $explode = explode('|',$value1);
+
+											$attribute = $this->agent_admin_model->get_attribute($compare_name_data->id,$get_compare_name_new->id,$explode[0]);
+											
+											//echo "<pre>";print_r($attribute);echo "</pre>";
+											
+											if($attribute == ''){
+												//echo "blank <br>";
+												//unset($a[$get_compare_name_new->id]);
+												unset($b[$compare_name_data->id]);
+																					
+											}else{
+												//echo "Not blank <br>";
+												//echo $get_compare_name_new->id;
+												if($attribute->yes_no == '0' && $attribute->name == ''){
+													//unset($a[$get_compare_name_new->id]);
+													unset($b[$compare_name_data->id]);
+												}else{
+													/* if(!in_array($get_compare_name_new->id, $a)){
+														$a[]=$get_compare_name_new->id;
+													} */
+													
+													if(!in_array($compare_name_data->id, $b)){
+														$b[]=$compare_name_data->id;
+													}
+													
+													$blankArray[] = $get_compare_name_new->id;
+												}
+												
+												
+											}
+										}
+									
+									}
+								}
+								
+								$a = array_unique($blankArray);
+								
+								/* echo "<pre>";print_r($blankArray);echo "</pre>";
+								echo "<pre>";print_r($b);echo "</pre>"; */
+								
+
 
                                 $ct = 0;
                                 foreach($compare_name as $compare_name_data){ 
+								
+								//echo "<pre>";print_r($compare_name_data);echo "</pre>";
+								
+								if (in_array($compare_name_data->id, $b)) {
 
                                     $get_compare_id_new = $this->agent_admin_model->get_compare_title_detail($compare_name_data->id);
                                 ?>
@@ -316,9 +382,12 @@
                             $i=1;
                             foreach($get_compare_id_new as $get_compare_name_new){ 
 
-                                
+                                //echo"<pre>";print_r($get_compare_name_new);echo"</pre>";
+								
+								if (in_array($get_compare_name_new->id, $a)) {
 
                             ?>
+							
 
                                 <tr>
 
@@ -341,6 +410,7 @@
 
                                         <?php if($attribute != ''){ ?>
 
+
                                             <?php 
                                                 if($attribute->name != ''){
                                             
@@ -351,14 +421,20 @@
                                                     <div class="check-right">
                                                         <i class="feather icon-feather-check"></i>
                                                     </div> 
-                                                <?php } else{ ?>
+                                                <?php } elseif($attribute->yes_no == '2'){ ?>
                                                     <div class="check-wrong">
 
                                                         <span>&times;</span>
 
                                                     </div>
-                                                <?php }?>
+                                                <?php }else{?>
+													<div class="">
 
+                                                        <span>-</span>
+
+                                                    </div>
+												<?php } ?>
+	
                                             <?php } ?>
 
                                             
@@ -396,8 +472,12 @@
                                     </td> -->
 
                                 </tr>
-                            <?php $i++;} ?>
-                            <?php $ct++;} ?>
+								<?php $i++; 
+								} 
+								} ?>
+								<?php $ct++; 
+								} 
+								} ?>
 <!-- 
                                 <t r>
 
@@ -605,7 +685,11 @@
 
             </div>
 
-        <?php } ?>
+        <?php }else{ ?>
+			
+			<h3>coming soon</h3>
+		
+		<?php } ?>
 
         </div>
 

@@ -80,21 +80,7 @@ $http_host = $this->config->item('http_host');
 
    <center>
 
-        <table style="padding: 30px 20px; background-color: #fefefe;">
-
-            <tbody>
-
-                <tr>
-
-                    <td style=" width: 50%;"><img src="<?php echo $base_url_views; ?>agent-admin/email_temp/img/logo.png" style="max-height: 54px;" alt=""></td>
-
-                    <td style="padding: 0; width: 50%;"> <img src="<?php echo $base_url_views; ?>agent-admin/email_temp/img/banner.png" alt=""></td>
-
-                </tr>
-
-            </tbody>
-
-        </table>
+        
 
 
 
@@ -248,6 +234,21 @@ $http_host = $this->config->item('http_host');
                     </tr>
 
                 </tbody>
+
+        </table>
+        <table style="padding: 30px 20px; background-color: #fefefe;">
+
+            <tbody>
+
+                <tr>
+
+                    <td style=" width: 50%;"><img src="<?php echo $base_url_views; ?>agent-admin/email_temp/img/logo.png" style="max-height: 54px;" alt=""></td>
+
+                    <td style="padding: 0; width: 50%;"> <img src="<?php echo $base_url_views; ?>agent-admin/email_temp/img/banner.png" alt=""></td>
+
+                </tr>
+
+            </tbody>
 
         </table>
 

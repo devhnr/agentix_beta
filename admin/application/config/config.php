@@ -47,12 +47,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $config['findex_url']     = "https://".$_SERVER['HTTP_HOST']."/";
 
 
-$config['document_root'] = $_SERVER['DOCUMENT_ROOT']."/agentix/beta/admin/";
-$config['http_host']	= "http//".$_SERVER['HTTP_HOST']."/agentix/beta/admin/";
-$config['base_url']	= "http://".$_SERVER['HTTP_HOST']."/agentix/beta/admin/index.php/";
-$config['front_base_url'] = "http://".$_SERVER['HTTP_HOST']."/agentix/beta/";
-$config['base_url_views'] = "http://".$_SERVER['HTTP_HOST']."/agentix/beta/admin/application/views/";
-$config['upload'] = $_SERVER['DOCUMENT_ROOT']."/agentix/beta/upload/";
+$config['document_root'] = $_SERVER['DOCUMENT_ROOT']."/beta/admin/";
+$config['http_host']	= "https//".$_SERVER['HTTP_HOST']."/beta/admin/";
+$config['base_url']	= "https://".$_SERVER['HTTP_HOST']."/beta/admin/index.php/";
+$config['front_base_url'] = "https://".$_SERVER['HTTP_HOST']."/beta/";
+$config['base_url_views'] = "https://".$_SERVER['HTTP_HOST']."/beta/admin/application/views/";
+$config['upload'] = $_SERVER['DOCUMENT_ROOT']."/beta/upload/";
 
 
 

@@ -117,7 +117,7 @@
 
                                             </div>
 
-                                            <div class="policy-chart">
+                                            <div class="policy-chart" style="display:none;">
                                             
                                                 <?php if($policies_data->image !=''){?>
 
@@ -292,6 +292,58 @@
                                 $compare_name = $this->compare_policies_model->get_compare_name(); 
 
                                 //echo"<pre>";print_r($compare_name);echo"</pre>";
+								
+								//$a=array();
+								$b =array();
+								
+								$blankArray = array();
+								
+								foreach($compare_name as $compare_name_data){ 
+
+                                    $get_compare_id_new = $this->compare_policies_model->get_compare_title_detail($compare_name_data->id);
+									
+									
+									foreach($get_compare_id_new as $get_compare_name_new){
+										
+										foreach($create_array as $key1 => $value1){
+
+                                            $explode = explode('-',$value1);
+
+											$attribute = $this->compare_policies_model->get_attribute($compare_name_data->id,$get_compare_name_new->id,$explode[0]);
+											
+											if($attribute == ''){
+												//echo "blank <br>";
+												unset($a[$get_compare_name_new->id]);
+												unset($b[$compare_name_data->id]);
+																					
+											}else{
+												//echo "Not blank <br>";
+												//echo $get_compare_name_new->id;
+												if($attribute->yes_no == '0' && $attribute->name == ''){
+													//unset($a[$get_compare_name_new->id]);
+													unset($b[$compare_name_data->id]);
+												}else{
+													/* if(!in_array($get_compare_name_new->id, $a)){
+														$a[]=$get_compare_name_new->id;
+													} */
+													
+													if(!in_array($compare_name_data->id, $b)){
+														$b[]=$compare_name_data->id;
+													}
+													
+													$blankArray[] = $get_compare_name_new->id;
+												}
+												
+											}
+								
+										}
+								
+									}
+								}
+								
+								$a = array_unique($blankArray);
+								
+								//echo "<pre>";print_r($b);echo "</pre>";
 
                                 ?>
 
@@ -299,6 +351,8 @@
 
                                 $ct = 0;
                                 foreach($compare_name as $compare_name_data){ 
+								
+								if (in_array($compare_name_data->id, $b)) {
 
                                     $get_compare_id_new = $this->compare_policies_model->get_compare_title_detail($compare_name_data->id);
                                 ?>
@@ -316,7 +370,7 @@
                             $i=1;
                             foreach($get_compare_id_new as $get_compare_name_new){ 
 
-                                
+                                if (in_array($get_compare_name_new->id, $a)) {
 
                             ?>
 
@@ -351,13 +405,19 @@
                                                     <div class="check-right">
                                                         <i class="feather icon-feather-check"></i>
                                                     </div> 
-                                                <?php } else{ ?>
+                                                <?php } elseif($attribute->yes_no == '2'){ ?>
                                                     <div class="check-wrong">
 
                                                         <span>&times;</span>
 
                                                     </div>
-                                                <?php }?>
+                                                <?php }else{?>
+													<div class="">
+
+                                                        <span>-</span>
+
+                                                    </div>
+												<?php } ?>
 
                                             <?php } ?>
 
@@ -396,8 +456,8 @@
                                     </td> -->
 
                                 </tr>
-                            <?php $i++;} ?>
-                            <?php $ct++;} ?>
+                            <?php $i++;} }?>
+								<?php $ct++;} }?>
 <!-- 
                                 <t r>
 

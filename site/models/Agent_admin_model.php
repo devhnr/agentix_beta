@@ -99,7 +99,11 @@ class Agent_admin_Model extends CI_Model
 
 	function get_sum_insured_using_min_price($policies_id,$min_price)
 	{
-		 $sql = "SELECT * FROM sum_insuranced_attr WHERE sins_id ='".$policies_id."' and price LIKE '%".$min_price."%' ";
+		//$sql = "SELECT * FROM sum_insuranced_attr WHERE sins_id ='".$policies_id."' and price LIKE '%".$min_price."%' ";
+
+		$sql = "SELECT * FROM sum_insuranced_attr WHERE sins_id ='".$policies_id."' and price ='$min_price' ";
+
+
 		$query = $this->db->query($sql);
 		if($query->num_rows() > 0)
 		{
@@ -200,6 +204,17 @@ class Agent_admin_Model extends CI_Model
         $query = $this->db->get('company_name');
         if ($query->num_rows() > 0) {
             $result = $query->row()->image;
+            return $result;
+        } else {
+            return false;
+        }
+    }
+
+    function get_company_data($id) {
+        $this->db->where('id = ', $id);
+        $query = $this->db->get('company_name');
+        if ($query->num_rows() > 0) {
+            $result = $query->row();
             return $result;
         } else {
             return false;
@@ -378,6 +393,63 @@ class Agent_admin_Model extends CI_Model
 		}
 
 	}
+
+
+	function get_recommended_poster() {
+        
+        $sql = "SELECT * FROM poster  where recomanded ='yes' order by id desc";
+	      $query = $this->db->query($sql);
+	      if ($query->num_rows() > 0)
+	      {
+	         $result = $query->result();
+	         return $result;
+	      }else
+	      {
+	         return false;
+	      }
+    }
+
+    function get_daily_poster() {
+        
+        $sql = "SELECT * FROM poster order by id desc";
+	      $query = $this->db->query($sql);
+	      if ($query->num_rows() > 0)
+	      {
+	         $result = $query->result();
+	         return $result;
+	      }else
+	      {
+	         return false;
+	      }
+    }
+
+    function get_all_blogs() {
+        
+        $sql = "SELECT * FROM blogs order by id desc";
+	      $query = $this->db->query($sql);
+	      if ($query->num_rows() > 0)
+	      {
+	         $result = $query->result();
+	         return $result;
+	      }else
+	      {
+	         return false;
+	      }
+    }
+
+    function get_all_new_products() {
+        
+        $sql = "SELECT * FROM new_products order by id desc";
+	      $query = $this->db->query($sql);
+	      if ($query->num_rows() > 0)
+	      {
+	         $result = $query->result();
+	         return $result;
+	      }else
+	      {
+	         return false;
+	      }
+    }
    
 
    
