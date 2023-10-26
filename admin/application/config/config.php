@@ -54,11 +54,6 @@ $config['front_base_url'] = "https://".$_SERVER['HTTP_HOST']."/beta/";
 $config['base_url_views'] = "https://".$_SERVER['HTTP_HOST']."/beta/admin/application/views/";
 $config['upload'] = $_SERVER['DOCUMENT_ROOT']."/beta/upload/";
 
-
-
-
-
-
 /*
 |--------------------------------------------------------------------------
 | Index File
